@@ -10,11 +10,17 @@
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
     <script type="text/javascript">
-        // Initialize EmailJS with your user ID (replace with your actual EmailJS user ID)
-        (function(){
-            emailjs.init("passion.prep1@gmail.com");  // Replace 'user_XXXXXXX' with your EmailJS user ID
+        (function () {
+          emailjs.init({
+            publicKey: 'MQOKH1KKokunxnBlu', // 🔁 Replace with your actual EmailJS public key
+            blockHeadless: true,
+            limitRate: {
+              id: 'passion_prep_app', // Unique app identifier
+              throttle: 10000,        // Allow 1 request every 10 seconds
+            },
+          });
         })();
-    </script>
+      </script>
 </head>
 <body>
     <div class="main">
