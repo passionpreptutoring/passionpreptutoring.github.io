@@ -1,29 +1,30 @@
-/* General reset */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body and background */
 body {
   font-family: Arial, sans-serif;
+  line-height: 1.6;
   background-color: #f4f4f4;
-  color: #333;
 }
 
-/* Main container */
+/* Main Layout */
 .main {
   width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-/* Navbar styles */
+/* Navbar Styles */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #2c3e50;
+  background-color: #333;
+  padding: 10px 20px;
   color: white;
 }
 
@@ -33,48 +34,40 @@ body {
 }
 
 .navbar .menu ul {
-  list-style-type: none;
+  list-style: none;
   display: flex;
-  gap: 20px;
 }
 
-.navbar .menu ul li {
-  display: inline-block;
+.navbar .menu li {
+  margin: 0 15px;
 }
 
-.navbar .menu ul li a {
+.navbar .menu a {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  font-size: 16px;
-  padding: 5px 10px;
   transition: color 0.3s;
 }
 
-.navbar .menu ul li a:hover {
-  color: #f39c12;
+.navbar .menu a:hover {
+  color: #f1c40f;
 }
 
-.navbar .search {
-  display: flex;
-  align-items: center;
-}
-
-.navbar .srch {
-  padding: 8px;
+.navbar .search input.srch {
+  padding: 5px;
   font-size: 14px;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 
 .navbar .btn {
-  padding: 8px 15px;
+  padding: 5px 10px;
   font-size: 14px;
-  background-color: #f39c12;
-  border: none;
-  border-radius: 5px;
-  color: white;
   cursor: pointer;
+  border: none;
+  background-color: #f1c40f;
+  color: white;
+  border-radius: 3px;
   transition: background-color 0.3s;
 }
 
@@ -82,72 +75,129 @@ body {
   background-color: #e67e22;
 }
 
-/* Contact section */
-section#contact {
-  padding: 40px;
-  background-color: #fff;
+/* Home Section */
+#home {
   text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-section#contact h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #2c3e50;
+#home h2 {
+  font-size: 2.5rem;
+  color: #333;
 }
 
-section#contact p {
-  font-size: 16px;
-  margin-bottom: 20px;
-  color: #7f8c8d;
+#home p {
+  font-size: 1.2rem;
+  color: #777;
 }
 
-section#contact form {
-  max-width: 600px;
-  margin: 0 auto;
+#home h3 {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+#home form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
 }
 
-section#contact form input,
-section#contact form textarea {
+#home input,
+#home textarea {
   padding: 10px;
-  border-radius: 5px;
+  margin: 10px 0;
+  width: 300px;
   border: 1px solid #ccc;
-  font-size: 16px;
-  width: 100%;
-  box-sizing: border-box;
+  border-radius: 3px;
+  font-size: 1rem;
 }
 
-section#contact form textarea {
-  height: 150px;
-  resize: none;
-}
-
-section#contact form button {
+#home button {
   padding: 10px 20px;
-  background-color: #2c3e50;
+  background-color: #333;
   color: white;
   border: none;
-  border-radius: 5px;
-  font-size: 16px;
   cursor: pointer;
+  border-radius: 3px;
   transition: background-color 0.3s;
 }
 
-section#contact form button:hover {
-  background-color: #34495e;
+#home button:hover {
+  background-color: #f1c40f;
 }
 
-/* Footer styles */
+/* Contact Section */
+#contact {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+#contact p {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+#contact iframe {
+  border: none;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+}
+
+/* Footer Styles */
 footer {
-  background-color: #2c3e50;
-  color: white;
   text-align: center;
   padding: 20px;
+  background-color: #333;
+  color: white;
   margin-top: 40px;
 }
 
 footer p {
-  font-size: 14px;
+  font-size: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .navbar .menu ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navbar .menu li {
+      margin: 10px 0;
+  }
+
+  #home form {
+      width: 100%;
+  }
+
+  #home input,
+  #home textarea {
+      width: 80%;
+  }
+
+  #home button {
+      width: 80%;
+  }
+
+  #contact iframe {
+      height: 500px;
+  }
 }
