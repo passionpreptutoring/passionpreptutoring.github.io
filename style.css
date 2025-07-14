@@ -8,26 +8,30 @@ font-family: 'Inter', sans-serif;
 
 body {
 background-color: #fff;
-color: #333;
+color: #000000;
 line-height: 1.6;
 }
 
 header {
-background-color: #ffffff;
-padding: 20px 40px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-position: sticky;
-top: 0;
-z-index: 1000;
+  background-color: #ffffff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 80px; /* fixed height */
+  overflow: visible; /* allows the logo to overflow if needed */
 }
 
 .logo img {
-height: 100px;
-width: auto;
+  height: 145px;
+  width: auto 135       /* increase logo height */
+  margin-top: -15px;  /* pull it up slightly so header height doesn't expand */
 }
+
 
 nav ul {
 list-style: none;
@@ -37,7 +41,7 @@ gap: 25px;
 
 nav ul li a {
 text-decoration: none;
-color: #333;
+color: #ff6666;
 font-weight: 600;
 transition: color 0.3s ease;
 }
@@ -47,9 +51,10 @@ color: #0070f3;
 }
 
 .hero {
+font-family: 'Times New Roman', Times, serif;
 text-align: center;
 padding: 100px 20px;
-background: linear-gradient(145deg, #f0f4ff, #e8f0ff);
+background: linear-gradient(145deg, #ffc57e, #e8f0ff);
 }
 
 .hero h1 {
@@ -102,4 +107,128 @@ text-align: center;
 padding: 20px;
 background-color: #f9f9f9;
 font-size: 0.9rem;
+}
+/* SECTION: HERO INTRO */
+.services-hero {
+  background-color: #fff6f6;
+  padding: 80px 20px 60px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.services-hero h1 {
+  font-size: 2.8rem;
+  color: #cc4c4c;
+  margin-bottom: 20px;
+}
+
+.services-hero p {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* SECTION: GRID OF SUBJECT CARDS */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 60px 40px;
+  background-color: #fdf9f3;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.service-card {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  text-align: left;
+}
+
+.service-card h2 {
+  color: #cc4c4c;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* SECTION: CALL TO ACTION */
+.services-cta {
+  background-color: #fff6f6;
+  padding: 40px 20px;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #444;
+}
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  scroll-behavior: smooth;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #f5f5f5;
+}
+
+.section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #ffffff;
+  border-top: 1px solid #eee;
+}
+
+.section:nth-of-type(even) {
+  background-color: #fafafa; /* alternate background */
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #333;
+}
+
+.reviews .review {
+  margin: 20px auto;
+  max-width: 600px;
+  font-style: italic;
+  color: #555;
+}
+.site-footer {
+  background-color: #f79e55;
+  color: #000000f3;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.site-footer a {
+  color: #1a6eff; /* gold/yellow for links */
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-content p {
+  margin: 10px 0;
+  font-size: 1rem;
 }
