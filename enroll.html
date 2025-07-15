@@ -1,44 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enroll - Passion Prep Tutoring</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enroll - Passion Prep Tutoring</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f3f1;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    #enroll-intro {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background-color: hsl(0, 100%, 98%);
+    }
+
+    #enroll-intro h1 {
+      font-size: 2.8rem;
+      color: #d74f4f;
+      margin-bottom: 20px;
+    }
+
+    #enroll-intro p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .form-wrapper {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      background-color: #fef7ef;
+    }
+
+    iframe {
+      border: none;
+      width: 100%;
+      max-width: 800px;
+      height: 4200px;
+      border-radius: 12px;
+      background-color: white;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    }
+
+    #enroll-end {
+      text-align: center;
+      padding: 60px 20px 80px;
+      background-color: hsl(0, 100%, 98%);
+    }
+
+    #enroll-end p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      color: #444;
+    }
+
+    .site-footer {
+      background-color: #f4934c;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    .site-footer a {
+      color: #2c57e4;
+      text-decoration: none;
+    }
+
+    .site-footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-          <img src="images/logo-removebg.png" alt="Passion Prep Tutoring Logo">
-        </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="enroll.html">Enroll</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="tutor.html">Become a tutor</a></li>
-          </ul>
-        </nav>
-      </header>
-    
-    <section id="enroll">
-        <h2>Enroll</h2>
-        <p>If you are interested in out services and would like to enroll your child, please fill out this form below! Look Forward to hearing from you!
+  <header>
+    <div class="logo">
+      <img src="images/logo-removebg.png" alt="Passion Prep Tutoring Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="enroll.html">Enroll</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="tutor.html">Become a tutor</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <!-- Embed the Google Form iframe here -->
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdQnflD0X5F_RJYpm3_QOXSrDVLr_fspm3H1ntAHuV4m8Gkgg/viewform?embedded=true" 
-                width="640" 
-                height="4220" 
-                frameborder="0" 
-                marginheight="0" 
-                marginwidth="0">
-            Loading…
-        </iframe>
-    </section>
+  <!-- Intro Section -->
+  <section id="enroll-intro">
+    <h1>Enroll Your Child</h1>
+    <p>
+      If you are interested in our services and would like to enroll your child, please fill out the form below! This program is open to all students in need of support, especially those from underprivileged or low-income backgrounds. Every lesson is personalized, 100% free, and taught by a trained high school or university tutor. 💡📚
+    </p>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 PassionPrepTutoring. All rights reserved.</p>
-    </footer>
+  <!-- Google Form Embed -->
+  <div class="form-wrapper">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdQnflD0X5F_RJYpm3_QOXSrDVLr_fspm3H1ntAHuV4m8Gkgg/viewform?embedded=true">
+      Loading…
+    </iframe>
+  </div>
+
+  <!-- Ending Section -->
+  <section id="enroll-end">
+    <p>
+      We’re excited to support your child on their academic journey and can’t wait to see them thrive. Thank you for choosing Passion Prep Tutoring! 🌟
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Passion Prep Tutoring. All rights reserved.</p>
+      <p>Follow us on Instagram: <a href="https://www.instagram.com/passionpreptutoring" target="_blank">@passionpreptutoring</a></p>
+      <p>Email us at: <a href="mailto:passion.prep1@gmail.com">passion.prep1@gmail.com</a></p>
+    </div>
+  </footer>
 </body>
 </html>
+
+ 
