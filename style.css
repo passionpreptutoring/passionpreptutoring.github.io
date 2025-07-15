@@ -9,7 +9,7 @@
 body {
   margin: 0;
   background-color: #f8f8f8;
-  color: #f0eeed;
+  color: #ffffff;
   line-height: 1.6;
   scroll-behavior: smooth;
   font-family: 'Times New Roman', Times, serif;
@@ -32,7 +32,8 @@ header {
 
 .logo img {
   height: 145px;
-  margin-top: -15px;
+  width: 145px;
+  margin-top: +7px;
 }
 
 /* NAVIGATION */
@@ -57,7 +58,7 @@ nav ul li a:hover {
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background: linear-gradient(145deg, #fe8e66, #efd5b5);
+  background: linear-gradient(145deg, #faa485, #efd5b5);
 }
 
 .hero h1 {
@@ -166,6 +167,10 @@ button:hover {
   font-size: 1.2rem;
   color: #444;
 }
+.services-grid .service-card:last-child:nth-child(odd) {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* GENERIC SECTIONS (e.g. "About", "What is...") */
 .section {
@@ -192,12 +197,12 @@ button:hover {
   margin: 0 auto;
   color: #333;
 }
-
-/* REVIEWS (Classic block + Scrollable Cards) */
+/* REVIEWS SECTION */
 .reviews-section {
   background-color: #fdf9f3;
   padding: 60px 20px;
   text-align: center;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .reviews-section h2 {
@@ -206,43 +211,29 @@ button:hover {
   margin-bottom: 30px;
 }
 
-.reviews-container {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  padding-bottom: 10px;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-}
-
-.reviews-container::-webkit-scrollbar {
-  display: none;
-}
-
-.review-card {
-  flex: 0 0 300px;
-  background-color: #fff;
-  border: 1px solid #eee;
+.review {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  padding: 25px;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  padding: 25px 20px;
-  scroll-snap-align: start;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
   text-align: left;
 }
 
-.review-card p {
-  font-size: 1.05rem;
+.review p {
+  font-size: 1.1rem;
   color: #333;
+  margin-bottom: 10px;
   line-height: 1.6;
-  margin-bottom: 15px;
 }
 
-.review-card span {
+.review span {
   font-size: 0.95rem;
   color: #777;
   font-style: italic;
 }
-
 /* FOOTER */
 footer,
 .site-footer {
@@ -266,3 +257,68 @@ footer,
   margin: 10px 0;
   font-size: 1rem;
 }
+/* Divider between services and format */
+.service-divider {
+  height: 40px;
+  background-color: #fdf9f3;
+  border-top: 1px solid #eee;
+}
+
+/* How Our Tutoring Works section */
+.service-format {
+  background-color: #fffefc;
+  padding: 60px 30px 80px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.service-format h2 {
+  font-size: 2.5rem;
+  color: #cc4c4c;
+  margin-bottom: 40px;
+}
+
+.format-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.format-card {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.format-card:hover {
+  transform: translateY(-4px);
+}
+
+.format-card h3 {
+  color: #cc4c4c;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.format-card p {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.format-closing {
+  margin-top: 50px;
+  font-size: 1.2rem;
+  font-style: italic;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333;
+}
+
