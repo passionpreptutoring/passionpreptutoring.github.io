@@ -7,7 +7,6 @@
 }
 
 body {
-  margin: 0;
   background-color: #f8f8f8;
   color: #ffffff;
   line-height: 1.6;
@@ -27,13 +26,12 @@ header {
   top: 0;
   z-index: 1000;
   height: 80px;
-  overflow: visible;
 }
 
 .logo img {
   height: 145px;
   width: 145px;
-  margin-top: +7px;
+  margin-top: 7px;
 }
 
 /* NAVIGATION */
@@ -85,7 +83,8 @@ form {
   gap: 15px;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -107,11 +106,13 @@ button:hover {
   background-color: #005bd1;
 }
 
-/* SERVICES HERO */
-.services-hero {
-  background-color: #fff6f6;
-  padding: 80px 20px 60px;
+/* SERVICES HERO & CTA */
+.services-hero,
+.services-cta {
   text-align: center;
+  padding: 60px 20px;
+  background-color: #fff6f6;
+  color: #444;
 }
 
 .services-hero h1 {
@@ -120,12 +121,17 @@ button:hover {
   margin-bottom: 20px;
 }
 
-.services-hero p {
+.services-hero p,
+.services-cta {
   font-size: 1.25rem;
   max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
-  color: #444;
+}
+
+.services-cta {
+  font-style: italic;
+  font-size: 1.2rem;
 }
 
 /* SERVICES GRID */
@@ -158,21 +164,12 @@ button:hover {
   line-height: 1.5;
 }
 
-/* SERVICES CTA */
-.services-cta {
-  background-color: #fff6f6;
-  padding: 40px 20px;
-  text-align: center;
-  font-style: italic;
-  font-size: 1.2rem;
-  color: #444;
-}
 .services-grid .service-card:last-child:nth-child(odd) {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* GENERIC SECTIONS (e.g. "About", "What is...") */
+/* GENERIC SECTIONS */
 .section {
   padding: 80px 20px;
   text-align: center;
@@ -184,11 +181,16 @@ button:hover {
   background-color: #fafafa;
 }
 
+.section h1 {
+  font-size: 2.8rem;
+  color: #cc4c4c;
+  margin-bottom: 25px;
+}
+
 .section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #cc4c4c; /* match reviews-section color */
-  background-color:  /* same as reviews section */
+  color: #cc4c4c;
 }
 
 .section p {
@@ -197,6 +199,7 @@ button:hover {
   margin: 0 auto;
   color: #333;
 }
+
 /* REVIEWS SECTION */
 .reviews-section {
   background-color: #fdf9f3;
@@ -214,7 +217,7 @@ button:hover {
 .review {
   max-width: 600px;
   margin: 20px auto;
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 25px;
   border-radius: 10px;
   border: 1px solid #eee;
@@ -234,6 +237,7 @@ button:hover {
   color: #777;
   font-style: italic;
 }
+
 /* FOOTER */
 footer,
 .site-footer {
@@ -257,14 +261,15 @@ footer,
   margin: 10px 0;
   font-size: 1rem;
 }
-/* Divider between services and format */
+
+/* Divider */
 .service-divider {
   height: 40px;
   background-color: #fdf9f3;
   border-top: 1px solid #eee;
 }
 
-/* How Our Tutoring Works section */
+/* TUTOR FORMAT SECTION */
 .service-format {
   background-color: #fffefc;
   padding: 60px 30px 80px;
@@ -321,4 +326,3 @@ footer,
   margin-right: auto;
   color: #333;
 }
-
