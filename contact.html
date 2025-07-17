@@ -6,39 +6,8 @@
   <title>Contact | Passion Prep Tutoring</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
-  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init({
-        publicKey: 'VvjxNmZI9tLrjAy5l',
-        blockHeadless: true,
-        limitRate: {
-          id: 'passion_prep_app',
-          throttle: 10000,
-        },
-      });
-    })();
-  </script>
 </head>
 <body>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      document.getElementById("contact-form").addEventListener("submit", function (event) {
-        event.preventDefault();
-
-        emailjs.sendForm("service_7zuei8i", "template_i454rs6", this)
-          .then(() => {
-            alert("Message sent successfully!");
-            this.reset();
-          })
-          .catch((error) => {
-            console.error("EmailJS Error:", error);
-            alert("Failed to send the message. Please try again later.");
-          });
-      });
-    });
-  </script>
 
   <header>
     <div class="logo">
@@ -63,16 +32,17 @@
 
   <!-- Contact Form Section -->
   <section class="contact-form-section">
-    <form id="contact-form">
+    <form action="https://formspree.io/f/xpwlzgwr" method="POST">
       <label for="user_email">Your Email</label>
-      <input type="email" name="user_email" id="user_email" placeholder="your@email.com" required />
-  
+      <input type="email" name="email" id="user_email" placeholder="your@email.com" required />
+
       <label for="user_message">Your Message</label>
-      <textarea name="user_message" id="user_message" rows="6" placeholder="Write your message here..." required></textarea>
-  
+      <textarea name="message" id="user_message" rows="6" placeholder="Write your message here..." required></textarea>
+
+      <input type="hidden" name="_redirect" value="thankyou.html">
       <button type="submit">Send Message</button>
     </form>
-  </section>  
+  </section> 
 
   <footer class="site-footer">
     <div class="footer-content">
@@ -81,16 +51,8 @@
       <p>Email us at: <a href="mailto:passion.prep1@gmail.com">passion.prep1@gmail.com</a></p>
     </div>
   </footer>
+
 </body>
 </html>
 
-<form action="https://formspree.io/f/xpwlzgwr" method="POST">
-  <label for="user_email">Your Email</label>
-  <input type="email" name="email" id="user_email" placeholder="your@email.com" required />
-
-  <label for="user_message">Your Message</label>
-  <textarea name="message" id="user_message" rows="6" placeholder="Write your message here..." required></textarea>
-
-  <button type="submit">Send Message</button>
-</form>
 
