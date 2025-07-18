@@ -581,3 +581,39 @@ footer,
   color: #f76b6b; /* Accent red to match site theme */
 }
 
+/* NAVBAR STYLES */
+.navbar-container {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  z-index: 1000;
+}
+
+/* CENTERED LOGO ON ALL SCREENS (you can adjust if needed later) */
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 40px; /* adjust logo size */
+  z-index: 998;
+}
+
+/* HAMBURGER STYLES */
+.hamburger {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 999;
+  color: #cc4c4c; /* theme color */
+}
+
+/* Pushes page content down so logo/hamburger don't overlap it */
+.hero-section {
+  margin-top: 60px;
+}
+
+
