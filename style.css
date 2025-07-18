@@ -503,3 +503,32 @@ footer,
     flex-direction: column;
   }
 }
+/* Basic hamburger menu styles */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hide nav by default on mobile */
+#nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  #nav-menu {
+    display: none;
+    flex-direction: column;
+  }
+
+  #nav-menu.show {
+    display: flex;
+  }
+}

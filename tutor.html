@@ -11,7 +11,12 @@
     <div class="logo">
       <img src="images/logo-removebg.png" alt="Passion Prep Tutoring Logo">
     </div>
-    <nav>
+  
+    <!-- Hamburger Button -->
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  
+    <!-- Navigation Menu -->
+    <nav id="nav-menu">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
@@ -21,6 +26,7 @@
       </ul>
     </nav>
   </header>
+  
 
   <section class="hero">
     <h1>Become a Tutor</h1>
@@ -65,5 +71,15 @@
       <p>Email us at: <a href="mailto:passion.prep1@gmail.com">passion.prep1@gmail.com</a></p>
     </div>
   </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+  
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+  </script>
+  
 </body>
 </html>
