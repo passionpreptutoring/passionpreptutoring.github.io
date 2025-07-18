@@ -34,6 +34,14 @@ header {
   margin-top: 7px;
 }
 
+.logo {
+  position: relative;
+  left: 0;
+  margin-left: 0;
+  text-align: left;
+  float: left;
+}
+
 /* NAVIGATION */
 nav ul {
   list-style: none;
