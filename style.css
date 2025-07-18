@@ -537,7 +537,7 @@ footer,
     position: relative;
     width: 100%;
     height: 60px; /* adjust if needed */
-    background-color: rgb(245, 145, 145); /* top area background */
+    background-color: rgb(246, 246, 246); /* top area background */
   }
 
   .hamburger {
@@ -562,3 +562,14 @@ footer,
     margin-top: 60px; /* pushes content down so it doesn’t overlap navbar */
   }
 }
+
+.hamburger {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 1001;
+  color: #cc4c4c; /* Accent red to match site theme */
+}
+
