@@ -593,7 +593,7 @@ footer,
 /* CENTERED LOGO ON ALL SCREENS (you can adjust if needed later) */
 .logo {
   position: absolute;
-  top: -10px;
+  top: -15px;
   left: 50%;
   transform: translateX(-50%);
   height: 40px; /* adjust logo size */
