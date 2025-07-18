@@ -470,3 +470,36 @@ footer,
     margin: 0;
   }
 }
+.hamburger {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  #nav-menu {
+    display: none;
+  }
+
+  #nav-menu.show {
+    display: block;
+  }
+
+  #nav-menu ul {
+    flex-direction: column;
+  }
+}
